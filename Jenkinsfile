@@ -9,7 +9,7 @@ pipeline {
 
         stage('Clonar repositorio') {
             steps {
-                git 'https://github.com/usuario/mi-repo.git'
+                git 'https://github.com/SebtianS/Proyecto-DevOps'
             }
         }
 
