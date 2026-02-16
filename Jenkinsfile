@@ -7,12 +7,6 @@ pipeline {
 
     stages {
 
-        stage('Clonar repositorio') {
-            steps {
-                git 'https://github.com/SebtianS/Proyecto-DevOps'
-            }
-        }
-
         stage('Construir imagen Docker') {
             steps {
                 sh 'docker build -t $IMAGE .'
@@ -30,3 +24,4 @@ pipeline {
         }
     }
 }
+
